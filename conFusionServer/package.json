@@ -3,7 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./bin/www",
+    "build" : "cd ../ && cd my-app && yarn run build",
+    "install-client": "cd ../ && cd my-app && yarn install",
+    "heroku-postbuild" : "npm run install-client && npm run"
+
   },
   "dependencies": {
     "cookie-parser": "^1.4.5",
