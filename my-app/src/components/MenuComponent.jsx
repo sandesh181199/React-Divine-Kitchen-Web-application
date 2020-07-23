@@ -124,7 +124,7 @@ class NewDish extends Component {
         }
         console.log(value)
         this.props.addNewDish(value);
-        this.props.uploadImage(filename, filename.name);
+        this.props.uploadImage(filename);
     }
 
     onChangeHandler = (event) => {

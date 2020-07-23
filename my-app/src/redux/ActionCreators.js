@@ -589,16 +589,17 @@ export const newDish = (dish) => ({
     payload : dish
 })
 
-export const uploadImage = (file, fileName) => (dispatch) => {
+export const uploadImage = (fileName) => (dispatch) => {
     const bearer = 'Bearer ' + localStorage.getItem('token');
     const data = new FormData();
-    data.append('image',file, fileName)
+    data.append('image',fileName)
     
 
     return fetch(baseUrl + 'imageUpload', {
         method: 'POST',
         headers: {
-            'Authorization': bearer
+            'Authorization': bearer,
+            'Content-Type' : 'multipart/form-data'
         },
         body : data,
         credentials : "same-origin"

@@ -1,0 +1,23 @@
+{
+  "name": "react-divine-kitchen-web-application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd my-app && yarn run build",
+    "start": "conFusionServer/app.js",
+    "install-client": "cd my-app && yarn install",
+    "heroku-postbuild": "npm run install-client && npm run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandesh181199/React-Divine-Kitchen-Web-application.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sandesh181199/React-Divine-Kitchen-Web-application/issues"
+  },
+  "homepage": "https://github.com/sandesh181199/React-Divine-Kitchen-Web-application#readme"
+}
